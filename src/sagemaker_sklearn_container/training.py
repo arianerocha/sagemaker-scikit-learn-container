@@ -32,7 +32,8 @@ def train(training_environment):
                     user_entry_point=training_environment.user_entry_point,
                     args=training_environment.to_cmd_args(),
                     env_vars=training_environment.to_env_vars(),
-                    runner_type=runner.ProcessRunnerType)
+                    runner_type=runner.ProcessRunnerType,
+                    capture_error=True)
 
 
 def main():
